@@ -1,0 +1,39 @@
+section {
+    background-color: $background;
+
+    #localisation {
+        @include center;
+        align-items: center;
+        background-color: lighten($shadow, $amount: 5);
+        font-size: 27px;
+        padding: 20px 30px 20px 0;
+        margin: 0;
+        box-shadow: inset 0px 5px 5px darken($shadow, $amount: 10);
+        font-weight: bold;
+
+        span {
+            padding: 0 30px;
+        }
+    }
+
+    #intro {
+        background-color: $background;
+        @include center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            font-weight: 900;
+            padding: 45px 75px 30px 75px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 29px;
+            font-weight: 300;
+            margin: 0;
+            padding-bottom: 40px;
+        }
+    }
+}
