@@ -1,0 +1,29 @@
+footer {
+    background-color: lighten($color: #000000, $amount: 25);
+    color: #fbfbfb;
+
+    img {
+        width: 30%;
+        padding: 35px 0 10px 30px;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 27px;
+        padding: 20px;
+        margin: 0;
+
+        li {
+            padding: 5px 5px;
+        }
+
+        i {
+            padding: 10px 25px 10px 5px;
+        }
+
+        #handshake {
+            font-size: 20px;
+            padding-right: 15px;
+        }
+    }
+}
