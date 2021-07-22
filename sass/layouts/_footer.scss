@@ -1,20 +1,30 @@
 footer {
     background-color: lighten($color: #000000, $amount: 25);
-    color: #fbfbfb;
 
     img {
         width: 30%;
-        padding: 35px 0 10px 30px;
+        padding: 55px 0 10px 45px;
     }
 
     ul {
         list-style: none;
         font-size: 27px;
-        padding: 20px;
+        padding: 20px 0px 60px 40px;
         margin: 0;
 
         li {
             padding: 5px 5px;
+
+            a {
+                text-decoration: none;
+                color: #fbfbfb;
+                font-weight: 300;
+
+                &:hover {
+                    color: $terciary;
+                    text-decoration: underline;
+                }
+            }
         }
 
         i {
@@ -23,7 +33,7 @@ footer {
 
         #handshake {
             font-size: 20px;
-            padding-right: 15px;
+            padding-right: 20px;
         }
     }
 }

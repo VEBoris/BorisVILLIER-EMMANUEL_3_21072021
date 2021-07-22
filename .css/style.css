@@ -61,29 +61,40 @@ section #intro p {
   padding-bottom: 40px;
 }
 
+.choix {
+  background-color: white;
+}
 footer {
   background-color: #404040;
-  color: #fbfbfb;
 }
 footer img {
   width: 30%;
-  padding: 35px 0 10px 30px;
+  padding: 55px 0 10px 45px;
 }
 footer ul {
   list-style: none;
   font-size: 27px;
-  padding: 20px;
+  padding: 20px 0px 60px 40px;
   margin: 0;
 }
 footer ul li {
   padding: 5px 5px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fbfbfb;
+  font-weight: 300;
+}
+footer ul li a:hover {
+  color: #99E2D0;
+  text-decoration: underline;
 }
 footer ul i {
   padding: 10px 25px 10px 5px;
 }
 footer ul #handshake {
   font-size: 20px;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 
 button {
