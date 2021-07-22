@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
   <!-- lien font awesome -->
   <script src="https://kit.fontawesome.com/96414f0187.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="./.css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Oh My Food !</title>
 </head>
@@ -31,27 +31,28 @@
       <h1>Réserver le menu qui vous convient</h1>
       <p>Découver des restaurants d'exception, <br>
         sélectionnés par nos soins.</p>
-      <button>Explorer nos restaurants</button>
+      <button id="main_button">Explorer nos restaurants</button>
     </div>
   </section>
 
   <section class="choix">
     <h2>Fonctionnement</h2>
-    <article>
-      <span class="choix__number">1</span>
-      <i class="fas fa-mobile-alt"></i>Choisissez un restaurant
-    </article>
-
-    <article>
-      <span>2</span>
-      <i class="fas fa-list-ul"></i>Composez votre menu
-    </article>
-
-    <article>
-      <span>3</span>
-      <i class="fas fa-store"></i>Dégustez au restaurant
-    </article>
-    
+    <div>
+      <article class="choix__content">
+        <span class="choix__number">1</span>
+        <button class="choix_button"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
+      </article>
+  
+      <article class="choix__content">
+        <span class="choix__number">2</span>
+        <button class="choix_button"><i class="fas fa-list-ul" id="list"></i>Composez votre menu</button>
+      </article>
+  
+      <article class="choix__content">
+        <span class="choix__number">3</span>
+        <button class="choix_button"><i class="fas fa-store" id="store"></i>Dégustez au restaurant</button>
+      </article>
+    </div>
   </section>
 
   <footer>

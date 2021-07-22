@@ -25,7 +25,7 @@ section {
 
         h1 {
             font-weight: 900;
-            padding: 45px 75px 30px 75px;
+            padding: 45px 90px 30px 90px;
             margin: 0;
         }
 
@@ -40,8 +40,44 @@ section {
 
 .choix {
     background-color: white;
+    font-size: 29px;
+    margin-bottom: 90px;
+
+    h2 {
+        font-size: 37px;
+        margin: 60px 0 30px 35px;
+    }
+
+    &__content {
+        @include center;
+        align-items: center;
+        padding: 15px 0;
+        margin: 0 50px;
+
+        i {
+            color: gray;
+            padding-right: 45px;
+            padding-left: 60px;
+            font-size: 29px;
+        }
+
+        #list {
+            font-size: 25px;
+            padding-right: 41px;
+        }
+
+        #store {
+            font-size: 25px;
+            padding-right: 38px;
+        }
+    }
 
     &__number {
-
+        background-color: $primary;
+        padding: 7px 17px;
+        color: white;
+        border-radius: 25px;
+        position: absolute;
+        left: 30px;
     }
 }

@@ -3,13 +3,13 @@ footer {
 
     img {
         width: 30%;
-        padding: 55px 0 10px 45px;
+        padding: 45px 0 10px 45px;
     }
 
     ul {
         list-style: none;
         font-size: 27px;
-        padding: 20px 0px 60px 40px;
+        padding: 10px 0px 55px 40px;
         margin: 0;
 
         li {
@@ -21,8 +21,9 @@ footer {
                 font-weight: 300;
 
                 &:hover {
-                    color: $terciary;
+                    color: $tertiary;
                     text-decoration: underline;
+                    font-weight: 500;
                 }
             }
         }
