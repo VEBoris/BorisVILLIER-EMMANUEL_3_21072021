@@ -24,9 +24,12 @@ header {
   justify-content: center;
   align-items: center;
 }
+header i {
+  font-size: 40px;
+}
 header img {
   width: 45%;
-  margin: 40px 0;
+  margin: 40px 110px;
 }
 
 section {
@@ -184,6 +187,31 @@ section #intro p {
   right: 40px;
   bottom: 30px;
   font-size: 35px;
+}
+
+span img {
+  width: 100%;
+}
+
+main {
+  background-color: #F2F2F2;
+  font-size: 27px;
+}
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.entete h1 {
+  font-family: shrikhand, cursive;
+  font-weight: 500;
+  margin-left: 45px;
+}
+.entete i {
+  font-weight: normal;
+  font-size: 35px;
+  margin-right: 50px;
 }
 
 .restaurant__content {

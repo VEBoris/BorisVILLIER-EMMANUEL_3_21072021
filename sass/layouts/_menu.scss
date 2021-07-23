@@ -1,0 +1,27 @@
+span {
+    img {
+        width: 100%;
+    }
+}
+
+main {
+    background-color: $background;
+    font-size: 27px;
+}
+
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-family: shrikhand, cursive;
+        font-weight: 500;
+        margin-left: 45px
+    }
+
+    i {
+        @include heart;
+        margin-right: 50px;
+    }
+}
