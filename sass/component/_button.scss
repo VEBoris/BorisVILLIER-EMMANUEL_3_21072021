@@ -9,17 +9,3 @@
     box-shadow: 3px 3px 8px 4px darken($shadow, $amount: 10);
     cursor: pointer;
 }
-
-.choix_button {
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 550;
-    width: 100%;
-    padding: 45px 0;
-    background-color: lighten($background, $amount: 2);
-    border: none;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    box-shadow: 5px 5px 10px $shadow;
-}
