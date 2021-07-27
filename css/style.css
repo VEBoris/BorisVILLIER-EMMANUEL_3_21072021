@@ -4,6 +4,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -32,10 +33,10 @@ header img {
   margin: 40px 110px;
 }
 
-section {
+.presentation {
   background-color: #F2F2F2;
 }
-section #localisation {
+.presentation #localisation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,10 +47,10 @@ section #localisation {
   box-shadow: inset 0px 5px 5px silver;
   font-weight: bold;
 }
-section #localisation span {
+.presentation #localisation span {
   padding: 0 30px;
 }
-section #intro {
+.presentation #intro {
   background-color: #F2F2F2;
   display: flex;
   justify-content: center;
@@ -57,16 +58,15 @@ section #intro {
   align-items: center;
   text-align: center;
 }
-section #intro h1 {
+.presentation #intro h1 {
   font-weight: 900;
   padding: 45px 90px 30px 90px;
   margin: 0;
 }
-section #intro p {
+.presentation #intro p {
   font-size: 29px;
   font-weight: 300;
   margin: 0;
-  padding-bottom: 40px;
 }
 
 .choix {
@@ -132,6 +132,7 @@ section #intro p {
 
 .restaurant {
   width: 100%;
+  background-color: #F2F2F2;
 }
 .restaurant h2 {
   margin: 0;
@@ -189,29 +190,72 @@ section #intro p {
   font-size: 35px;
 }
 
+.content {
+  background-color: #F2F2F2;
+}
+
 span img {
   width: 100%;
 }
 
-main {
-  background-color: #F2F2F2;
+.block {
   font-size: 27px;
+  border-top-left-radius: 85px;
+  border-top-right-radius: 85px;
+  transform: translateY(-100px);
+  background-color: #F2F2F2;
 }
-
-.entete {
+.block .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.entete h1 {
+.block .entete h1 {
   font-family: shrikhand, cursive;
   font-weight: 500;
-  margin-left: 45px;
+  margin-left: 30px;
 }
-.entete i {
+.block .entete i {
   font-weight: normal;
   font-size: 35px;
-  margin-right: 50px;
+  margin-right: 40px;
+}
+.block .menu__title {
+  margin-left: 30px;
+  width: 68px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #99E2D0;
+}
+.block .menu article {
+  background-color: white;
+  margin: 5px 15px 20px 30px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px #D9D9D9;
+}
+.block .menu article h3 {
+  margin: 0;
+  font-size: 29px;
+  padding-bottom: 6px;
+}
+.block .menu article p {
+  margin: 0;
+  font-size: 25px;
+}
+.block .menu article .prix {
+  padding-top: 44px;
+  font-size: 23px;
+  font-weight: 700;
+}
+.block span {
+  display: flex;
+  justify-content: center;
+}
+.block span .end {
+  margin-bottom: 0;
 }
 
 .restaurant__content {
@@ -255,11 +299,12 @@ footer ul #handshake {
   padding-right: 20px;
 }
 
-#main_button {
+button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  font-size: 29px;
+  font-size: 26px;
   color: white;
-  padding: 25px 35px;
+  padding: 30px 70px;
+  margin-top: 40px;
   margin-bottom: 80px;
   border-radius: 50px;
   border: none;

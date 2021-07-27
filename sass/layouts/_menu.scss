@@ -1,27 +1,80 @@
+.content {
+    background-color: $background;
+}
+
 span {
     img {
         width: 100%;
     }
 }
 
-main {
-    background-color: $background;
+.block {
     font-size: 27px;
-}
+    border-top-left-radius: 85px;
+    border-top-right-radius: 85px;
+    transform: translateY(-100px);
+    background-color: $background;
 
-.entete {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    h1 {
-        font-family: shrikhand, cursive;
-        font-weight: 500;
-        margin-left: 45px
+    .entete {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        h1 {
+            font-family: shrikhand, cursive;
+            font-weight: 500;
+            margin-left: 30px;
+        }
+    
+        i {
+            @include heart;
+            margin-right: 40px;
+        }
     }
 
-    i {
-        @include heart;
-        margin-right: 50px;
+    .menu {
+        &__title {
+            margin-left: 30px;
+            width: 68px;
+            padding-bottom: 5px;
+            border-bottom: 4px solid $tertiary;
+        }
+
+        article {
+            background-color: white;
+            margin: 5px 15px 20px 30px;
+            padding: 15px 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            box-shadow: 5px 5px 10px $shadow;
+
+            h3 {
+                margin: 0;
+                font-size: 29px;
+                padding-bottom: 6px;
+            }
+    
+            p {
+                margin: 0;
+                font-size: 25px;
+            }
+
+            .prix {
+                padding-top: 44px;
+                font-size: 23px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+
+        .end {
+            margin-bottom: 0;
+        }
     }
 }

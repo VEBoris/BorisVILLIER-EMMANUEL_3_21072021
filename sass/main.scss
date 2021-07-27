@@ -4,12 +4,11 @@
 
 // utils
 @import
-"./utils/mixins",
-"./utils/variables";
+"./utils/variables",
+"./utils/mixins";
 
 // layouts
-@import
-"./layouts/header",
+@import "./layouts/header",
 "./layouts/accueil",
 "./layouts/menu",
 "./layouts/grid",

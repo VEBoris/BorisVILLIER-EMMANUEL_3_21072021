@@ -1,4 +1,4 @@
-section {
+.presentation {
     background-color: $background;
 
     #localisation {
@@ -33,7 +33,6 @@ section {
             font-size: 29px;
             font-weight: 300;
             margin: 0;
-            padding-bottom: 40px;
         }
     }
 }
@@ -113,6 +112,7 @@ section {
 
 .restaurant {
     width: 100%;
+    background-color: $background;
 
     h2 {
         margin: 0;
