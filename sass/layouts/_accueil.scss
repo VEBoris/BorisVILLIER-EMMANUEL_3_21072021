@@ -131,8 +131,7 @@
         box-shadow: 5px 5px 10px $shadow;
 
         &:hover {
-            transform: scale(0.95);
-            transition: ease 0.5s;
+            box-shadow: 5px 5px 10px $secondary;
         }
 
         img {
@@ -170,12 +169,13 @@
 
         @keyframes remplissage {
             0% {
-                transform: translateY(50px);
-                visibility: visible;
+                transform: scaleY(0.4);
+                transform-origin: 0% 100%;
             }
-    
+
             100% {
-                transform: translateY(0px);
+                transform: scaleY(1);
+                transform-origin: 0% 100%;
             }
         }
 
@@ -187,7 +187,7 @@
             font-size: 35px;
 
             &:hover {
-                
+                @include coeur;
             }
         }
     }

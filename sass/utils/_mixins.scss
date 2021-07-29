@@ -16,5 +16,16 @@
 }
 
 @mixin coeur {
-    
+    animation: remplissage 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background: linear-gradient(to bottom right, $secondary, $primary);
+    font-weight: 900;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+@mixin trois_points {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
