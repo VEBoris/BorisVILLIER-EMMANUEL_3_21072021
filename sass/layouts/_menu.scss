@@ -40,31 +40,63 @@ span {
             border-bottom: 4px solid $tertiary;
         }
 
+        @keyframes slide {
+            0% {
+                transform: translateX(50px);
+                visibility: visible;
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
         article {
             background-color: white;
             margin: 5px 15px 20px 30px;
-            padding: 15px 20px;
             border-radius: 20px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             box-shadow: 5px 5px 10px $shadow;
+            overflow: hidden;
+
+            &:hover {
+                .block_slide, .prix {
+                    animation: slide 0.7s ease-in-out both;
+                    display: flex;
+                    align-items: center;
+                }
+            }
 
             h3 {
                 margin: 0;
                 font-size: 29px;
-                padding-bottom: 6px;
+                padding: 15px 0 6px 20px;
             }
     
             p {
                 margin: 0;
                 font-size: 25px;
+                padding-bottom: 15px;
+                padding-left: 20px;
             }
 
             .prix {
-                padding-top: 44px;
+                padding-top: 59px;
+                padding-right: 20px;
                 font-size: 23px;
                 font-weight: 700;
+            }
+
+            .block_slide {
+                background-color: $tertiary;
+                color: white;
+                display: none;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                padding: 0 35px;
+                font-size: 35px;
             }
         }
     }
