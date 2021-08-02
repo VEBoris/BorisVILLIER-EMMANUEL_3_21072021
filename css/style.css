@@ -304,9 +304,19 @@ span img {
 @keyframes apparition {
   0% {
     transform: translateY(50px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(30px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(10px);
+    opacity: 0.7;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes slide {
@@ -335,7 +345,19 @@ span img {
   justify-content: space-between;
   box-shadow: 5px 5px 10px #D9D9D9;
   overflow: hidden;
-  animation: apparition 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: apparition 0.7s linear;
+}
+.block .menu article:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.block .menu article:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.block .menu article:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.block .menu article:nth-child(4) {
+  animation-delay: 0.8s;
 }
 .block .menu article:hover p, .block .menu article:hover h3 {
   text-overflow: ellipsis;

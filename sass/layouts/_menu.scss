@@ -53,10 +53,22 @@ span {
         @keyframes apparition {
             0% {
                 transform: translateY(50px);
+                opacity: 0;
+            }
+
+            25% {
+                transform: translateY(30px);
+                opacity: 0.4;
+            }
+
+            75% {
+                transform: translateY(10px);
+                opacity: 0.7;
             }
 
             100% {
                 transform: translateY(0);
+                opacity: 1;
             }
         }
 
@@ -90,7 +102,8 @@ span {
             justify-content: space-between;
             box-shadow: 5px 5px 10px $shadow;
             overflow: hidden;
-            animation: apparition 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: apparition 0.7s linear;
+            @include boucle;
 
             &:hover {
                 p, h3 {
