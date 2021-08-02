@@ -1,3 +1,14 @@
+@keyframes shadow_btn {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.85;
+        box-shadow: 0 0 15px 0 black;
+    }
+}
+
 button {
     background: linear-gradient(to bottom right, $secondary, $primary);
     font-size: 26px;
@@ -10,8 +21,7 @@ button {
     box-shadow: 3px 3px 8px 4px darken($shadow, $amount: 10);
     cursor: pointer;
 
-    // &:hover {
-    //     opacity: 0.8;
-    //     box-shadow: 3px 3px 20px darken(grey, $amount: 20);
-    // }
+    &:hover {
+        animation: shadow_btn 0.5s both;
+    }
 }
