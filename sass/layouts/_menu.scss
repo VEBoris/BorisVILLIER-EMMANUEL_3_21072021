@@ -50,6 +50,16 @@ span {
             border-bottom: 4px solid $tertiary;
         }
 
+        @keyframes apparition {
+            0% {
+                transform: translateY(50px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
         @keyframes slide {
             0% {
                 transform: translateX(50px);
@@ -71,9 +81,8 @@ span {
             }
         }
   
-
         article {
-            background-color: white;
+            background-color: $basic;
             margin: 5px 15px 20px 30px;
             border-radius: 20px;
             display: flex;
@@ -81,6 +90,7 @@ span {
             justify-content: space-between;
             box-shadow: 5px 5px 10px $shadow;
             overflow: hidden;
+            animation: apparition 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
             &:hover {
                 p, h3 {
@@ -125,7 +135,7 @@ span {
 
             .block_slide {
                 background-color: $tertiary;
-                color: white;
+                color: $basic;
                 display: none;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
