@@ -62,6 +62,10 @@
 
         span {
             padding: 0 30px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 35px;
+            }
         }
     }
 
@@ -97,7 +101,11 @@
     }
 
     &__block {
-        position: relative;
+        @media screen and (min-width: 1400px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 
     &__content {
@@ -105,10 +113,15 @@
         align-items: center;
         padding: 15px 0;
         margin: 0 50px;
+        position: relative;
 
         .choix__link{
             h3 {
                 margin: 0;
+            }
+
+            @media all and (min-width: 1400px) {
+                padding-right: 65px;
             }
         }
 
@@ -147,7 +160,12 @@
         color: $basic;
         border-radius: 25px;
         position: absolute;
-        left: 32px;
+        left: -20px;
+
+        @media screen and (min-width: 1400px) {
+            left: -26px;
+            padding: 7px 17px;
+        }
     }
 
     &__link {
@@ -240,6 +258,11 @@
             right: 40px;
             bottom: 30px;
             font-size: 35px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 25px;
+                right: 35px;
+            }
 
             &:hover {
                 @include coeur;

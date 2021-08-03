@@ -33,6 +33,11 @@ header img {
   width: 45%;
   margin: 40px 110px;
 }
+@media screen and (min-width: 768px) {
+  header img {
+    width: 35%;
+  }
+}
 
 @keyframes transparent {
   0% {
@@ -95,6 +100,11 @@ header img {
 .presentation #localisation span {
   padding: 0 30px;
 }
+@media screen and (min-width: 768px) {
+  .presentation #localisation span {
+    font-size: 35px;
+  }
+}
 .presentation #intro {
   background-color: #F2F2F2;
   display: flex;
@@ -123,8 +133,12 @@ header img {
   font-size: 37px;
   margin: 60px 0 30px 35px;
 }
-.choix__block {
-  position: relative;
+@media screen and (min-width: 1400px) {
+  .choix__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .choix__content {
   display: flex;
@@ -132,9 +146,15 @@ header img {
   align-items: center;
   padding: 15px 0;
   margin: 0 50px;
+  position: relative;
 }
 .choix__content .choix__link h3 {
   margin: 0;
+}
+@media all and (min-width: 1400px) {
+  .choix__content .choix__link {
+    padding-right: 65px;
+  }
 }
 .choix__content:hover .choix__link {
   background-color: #f2eafb;
@@ -162,7 +182,13 @@ header img {
   color: white;
   border-radius: 25px;
   position: absolute;
-  left: 32px;
+  left: -20px;
+}
+@media screen and (min-width: 1400px) {
+  .choix__number {
+    left: -26px;
+    padding: 7px 17px;
+  }
 }
 .choix__link {
   cursor: pointer;
@@ -246,6 +272,12 @@ header img {
   bottom: 30px;
   font-size: 35px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__vignette i {
+    font-size: 25px;
+    right: 35px;
+  }
+}
 .restaurant__vignette i:hover {
   animation: remplissage 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -264,6 +296,11 @@ header img {
 
 span img {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  span img {
+    height: 460px;
+  }
 }
 
 .block {
@@ -417,11 +454,30 @@ span img {
   grid-template-rows: repeat(4, 1fr);
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 35px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .restaurant__content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
 
 .grid_menu {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 25px;
+}
+@media screen and (min-width: 1400px) {
+  .grid_menu {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
 
 footer {
@@ -436,6 +492,15 @@ footer ul {
   font-size: 27px;
   padding: 10px 0px 55px 40px;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-top: 30px;
+  }
 }
 footer ul li {
   padding: 5px 5px;

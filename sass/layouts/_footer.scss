@@ -12,6 +12,14 @@ footer {
         padding: 10px 0px 55px 40px;
         margin: 0;
 
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+
         li {
             padding: 5px 5px;
 
