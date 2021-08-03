@@ -61,7 +61,7 @@
         font-weight: bold;
 
         span {
-            padding: 0 30px;
+            padding: 0 20px;
 
             @media screen and (min-width: 768px) {
                 font-size: 35px;
@@ -78,9 +78,9 @@
 
         h1 {
             font-weight: 900;
-            padding: 45px 0;
+            padding: 30px 0;
             margin: 0;
-            font-size: 32;
+            font-size: 30px;
         }
 
         p {
@@ -93,11 +93,11 @@
 
 .choix {
     background-color: $basic;
-    font-size: 29px;
-    margin-bottom: 90px;
+    font-size: 18px;
+    margin-bottom: 38px;
 
     h2 {
-        font-size: 32px;
+        font-size: 30px;
         margin: 35px 0 30px 24px;
     }
 
@@ -113,7 +113,7 @@
         @include center;
         align-items: center;
         padding: 15px 0;
-        margin: 0 50px;
+        margin: 0 20px;
         position: relative;
 
         .choix__link{
@@ -145,13 +145,13 @@
         }
 
         #list {
-            font-size: 25px;
-            padding-right: 41px;
+            font-size: 20px;
+            padding-right: 25px;
         }
 
         #store {
-            font-size: 25px;
-            padding-right: 38px;
+            font-size: 20px;
+            padding-right: 22px;
         }
     }
 
@@ -190,13 +190,13 @@
 
     h2 {
         margin: 0;
-        padding: 32px 0 35px 35px;
-        font-size: 32px;
+        padding: 32px 0 35px 25px;
+        font-size: 30px;
     }
 
     &__vignette {
         width: 90%;
-        height: 350px;
+        height: 300px;
         background-color: $basic;
         margin-left: 20px;
         margin-bottom: 30px;
@@ -210,7 +210,7 @@
 
         img {
             width: 100%;
-            height: 255px;
+            height: 218px;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
         }
