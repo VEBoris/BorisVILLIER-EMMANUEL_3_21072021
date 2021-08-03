@@ -91,11 +91,6 @@ header img {
 .presentation #localisation span {
   padding: 0 20px;
 }
-@media screen and (min-width: 768px) {
-  .presentation #localisation span {
-    font-size: 35px;
-  }
-}
 .presentation #intro {
   background-color: #F2F2F2;
   display: flex;
@@ -144,7 +139,7 @@ header img {
   margin: 0;
   font-size: 15px;
 }
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1200px) {
   .choix__content .choix__link {
     padding-right: 65px;
   }
@@ -177,10 +172,10 @@ header img {
   position: absolute;
   left: -12px;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .choix__number {
-    left: -26px;
-    padding: 7px 17px;
+    left: -16px;
+    padding: 0px 5px;
   }
 }
 .choix__link {
