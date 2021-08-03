@@ -20,7 +20,6 @@
 .grid_menu {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 25px;
 
     @media screen and (min-width: 1400px) {
         grid-template-columns: repeat(3, 1fr);

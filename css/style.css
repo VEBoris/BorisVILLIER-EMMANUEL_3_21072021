@@ -23,7 +23,7 @@ header {
   background-color: white;
 }
 header i {
-  font-size: 40px;
+  font-size: 25px;
 }
 header img {
   width: 180px;
@@ -113,7 +113,7 @@ header img {
   font-weight: 900;
   padding: 23px 0;
   margin: 0;
-  font-size: 26px;
+  font-size: 23px;
 }
 .presentation #intro p {
   font-size: 16px;
@@ -213,10 +213,9 @@ header img {
 }
 .restaurant__vignette {
   width: 90%;
-  height: 300px;
+  height: 255px;
   background-color: white;
   margin-left: 20px;
-  margin-bottom: 30px;
   border-radius: 25px;
   position: relative;
   box-shadow: 5px 5px 10px #D9D9D9;
@@ -289,7 +288,7 @@ header img {
 }
 
 .note img {
-  height: 400px;
+  height: 305px;
 }
 
 span img {
@@ -302,9 +301,8 @@ span img {
 }
 
 .block {
-  font-size: 27px;
-  border-top-left-radius: 85px;
-  border-top-right-radius: 85px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
   transform: translateY(-100px);
   background-color: #F2F2F2;
 }
@@ -316,11 +314,12 @@ span img {
 .block .entete h1 {
   font-family: shrikhand, cursive;
   font-weight: 500;
-  margin-left: 30px;
+  margin-left: 20px;
+  font-size: 23px;
 }
 .block .entete i {
   font-weight: normal;
-  font-size: 35px;
+  font-size: 20px;
   margin-right: 40px;
 }
 .block .entete i:hover {
@@ -331,10 +330,11 @@ span img {
   -webkit-background-clip: text;
 }
 .block .menu__title {
-  margin-left: 30px;
-  width: 68px;
+  margin-left: 16px;
+  width: 35px;
   padding-bottom: 5px;
   border-bottom: 4px solid #99E2D0;
+  font-size: 14px;
 }
 @keyframes apparition {
   0% {
@@ -373,12 +373,14 @@ span img {
 }
 .block .menu article {
   background-color: white;
-  margin: 5px 15px 20px 30px;
+  margin: 5px 15px 20px 10px;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 5px 5px 10px #D9D9D9;
+  width: 96%;
+  height: 75px;
   overflow: hidden;
   animation: apparition 0.7s linear;
 }
@@ -398,7 +400,7 @@ span img {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  max-width: 350px;
+  max-width: 200px;
 }
 .block .menu article:hover .prix {
   padding-bottom: 20px;
@@ -407,25 +409,26 @@ span img {
   animation: slide 0.7s ease-in-out both;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .block .menu article:hover .block_slide i, .block .menu article:hover .prix i {
   animation: rotation 0.6s ease-in-out both;
 }
 .block .menu article h3 {
   margin: 0;
-  font-size: 29px;
+  font-size: 14px;
   padding: 15px 0 6px 20px;
 }
 .block .menu article p {
   margin: 0;
-  font-size: 25px;
+  font-size: 11px;
   padding-bottom: 15px;
   padding-left: 20px;
 }
 .block .menu article .prix {
-  padding-top: 59px;
+  padding-top: 37px;
   padding-right: 20px;
-  font-size: 23px;
+  font-size: 13px;
   font-weight: 700;
 }
 .block .menu article .block_slide {
@@ -434,8 +437,8 @@ span img {
   display: none;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 0 35px;
-  font-size: 35px;
+  font-size: 20px;
+  width: 16%;
 }
 .block span {
   display: flex;
@@ -469,7 +472,6 @@ span img {
 .grid_menu {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 25px;
 }
 @media screen and (min-width: 1400px) {
   .grid_menu {
@@ -488,7 +490,7 @@ footer img {
 footer ul {
   list-style: none;
   font-size: 20px;
-  padding: 10px 0px 55px 20px;
+  padding: 10px 0px 30px 20px;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -520,7 +522,7 @@ footer ul i {
 }
 footer ul #handshake {
   font-size: 15px;
-  padding-right: 20px;
+  padding-right: 18px;
 }
 
 @keyframes shadow_btn {
@@ -534,7 +536,7 @@ footer ul #handshake {
 }
 button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   padding: 15px 25px;
   margin-top: 30px;
